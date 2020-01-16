@@ -1,0 +1,115 @@
+html, body {
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 15% 10% 20% 10% 35% 10% ;}
+
+.t{
+    background-color: lightslategrey;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.a{
+    background-color:lightskyblue;
+    display:grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.a1{
+    background-color: silver;
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+}
+.a2{
+    background-color: silver;
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+}
+.a3{
+    background-color: silver;
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+}
+.a4{
+    background-color: silver;
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+}
+
+.b {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.b1{
+    background-color: lightsalmon;
+    border-style: solid;
+    border-width: 1px;
+}
+.b2{
+    background-color: lightsalmon;
+    border-style: solid;
+    border-width: 1px;
+}
+.b3{
+    background-color: lightsalmon;
+    border-style: solid;
+    border-width: 1px;
+}
+.b4{
+    background-color: lightsalmon;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.c {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.c1{
+    background-color: silver;
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+}
+.c2{
+    background-color: silver;
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+}
+.c3{
+    background-color: silver;
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+}
+.c4{
+    background-color: silver;
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+}
+
+.d{
+    background-color: lime;
+}
+
+.e{
+    background-color: mediumslateblue;
+    text-align: center;
+}
+.img1{
+    align: center;
+}
