@@ -102,14 +102,11 @@ html, body {
     text-align: center;
 }
 
-.d{
+#d{
     background-color: lime;
 }
 
 .e{
     background-color: mediumslateblue;
     text-align: center;
-}
-.img1{
-    align: center;
 }
