@@ -1,6 +1,70 @@
 // ssssssss
 
 
+require([
+   "esri/Map", "esri/views/MapView", "esri/widgets/BasemapToggle", "esri/widgets/BasemapGallery", "esri/layers/GraphicsLayer", "esri/widgets/Sketch", "esri/layers/FeatureLayer"
+ ],
+
+  function(Map, MapView, BasemapToggle, BasemapGallery, GraphicsLayer, Sketch, FeatureLayer) 
+  {
+
+   var graphicsLayer = new GraphicsLayer();
+
+   let map = new Map({
+     basemap: "topo",
+     layers: [graphicsLayer]
+
+   });
+   
+   let mapContainer = new MapView({
+     container: "d",
+     map: map,
+     center: [22.57, 51.25],
+     zoom: 15
+   });
+   
+//       var basemapToggle = new BasemapToggle({
+//         view: view,
+//         secondMap: "satellite"
+//       });
+   
+//       view.ui.add(basemapToggle,"bottom-right");
+   
+   var basemapGallery = new BasemapGallery({
+     view: mapContainer,
+     source:
+      {
+       portal: 
+       {
+         url: "http://www.arcgis.com",
+         useVectorBasemaps: true, // Load vector tile basemap group
+       }
+     } 
+   });
+
+   var trailheadsLayer = new FeatureLayer({
+
+      url: "https://services3.arcgis.com/GVgbJbqm8hXASVYi/ArcGIS/rest/services/USA%20States/FeatureServer/0"
+
+    });
+
+
+   var sketch = new Sketch({
+      view: mapContainer,
+      layer: graphicsLayer
+
+    });
+
+
+
+   mapContainer.ui.add(basemapGallery, "top-right");
+   mapContainer.ui.add(sketch, "bottom-left");
+   map.add(trailheadsLayer);
+
+   });
+
+/*
+
 mapa1 = document.getElementById("mapa1");
 mapa2 = document.getElementById("mapa2");
 mapa3 = document.getElementById("mapa3");
@@ -108,11 +172,11 @@ require (["esri/Map", "esri/views/MapView"],
         
      }); 
 
-   })})
+   })}) */
+   
    
 
    
-
 
 
 
